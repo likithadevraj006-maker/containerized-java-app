@@ -30,8 +30,8 @@ jobs:
       - name: Build and test with Gradle
         run: gradle clean build
 
-      - name: Build Docker image
-        run: docker build -t containerized-java-app:1.0 .
+            - name: Build Docker image
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/containerized-java-app:1.0 .
 
       - name: Log in to Docker Hub
         if: github.event_name == 'push'
