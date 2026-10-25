@@ -1,0 +1,16 @@
+
+# Maven build output
+target/
+
+# Gradle build output and local cache
+build/
+.gradle/
+
+# Eclipse workspace metadata
+.settings/
+.classpath
+.project
+
+# Windows files
+Thumbs.db
+Desktop.ini
